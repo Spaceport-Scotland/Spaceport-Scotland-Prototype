@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1512719642492611627}
   - component: {fileID: 4736091908942872228}
   - component: {fileID: 8550229452367333608}
+  - component: {fileID: 4291180282935371812}
   m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
@@ -148,8 +149,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9196286250158026910}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0593482d113bb4740862845e2d326fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectInteraction
+--- !u!114 &4291180282935371812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9196286250158026910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e203e02130976a459273a09796289c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractionWithPhysics

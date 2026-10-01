@@ -4,9 +4,9 @@ using UnityEngine.InputSystem;
 public class CameraController : MonoBehaviour
 {
 
-    int cameraPosition;
+    private int cameraPosition;
   
-    float rotationSpeed = 5f;
+    public float rotationSpeed = 5f;
 
     void Update()
     {
