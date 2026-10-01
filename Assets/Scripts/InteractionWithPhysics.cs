@@ -4,16 +4,16 @@ using UnityEngine.InputSystem;
 public class InteractionWithPhysics : MonoBehaviour
 {
     //checks if you are dragging an object
-    bool dragging;
+    private bool dragging;
 
     //distance from the camera the object is when dragging
-    float distance;
+    private float distance;
 
     //target position for the object
-    Vector3 targetPosition;
+    private Vector3 targetPosition;
 
     //speed the object moves towards the target
-    float moveSpeed = 5f;
+    public float moveSpeed = 5f;
 
     private Rigidbody rb;
 
@@ -50,6 +50,18 @@ public class InteractionWithPhysics : MonoBehaviour
 
             //sets the mouse position as the target
             targetPosition = ray.GetPoint(distance);
+
+            //increases distance when scrolling up
+            if (Mouse.current.scroll.ReadValue().y > 0)
+            {
+                distance += 0.2f;
+            }
+
+            //reduces distance when scrolling down
+            if (Mouse.current.scroll.ReadValue().y < 0)
+            {
+                distance -= 0.2f;
+            }
         }
 
         //sets dragging to false when left mouse is released
@@ -58,6 +70,8 @@ public class InteractionWithPhysics : MonoBehaviour
             dragging = false;
             rb.useGravity = true;
         }
+
+
     }
 
     void FixedUpdate()
