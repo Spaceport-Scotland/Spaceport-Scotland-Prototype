@@ -26,6 +26,7 @@ public class ObjectInteraction : MonoBehaviour
                 }
             }
         }
+        
 
         //if the left mouse button is pressed while dragging 
         if (Mouse.current.leftButton.isPressed && dragging)
