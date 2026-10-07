@@ -15,10 +15,14 @@ public class InteractionWithPhysics : MonoBehaviour
     //speed the object moves towards the target
     public float moveSpeed = 5f;
 
+    private Vector3 startingPosition;
+
     private Rigidbody rb;
 
     void Start()
     {
+        startingPosition = transform.position;
+
         rb = GetComponent<Rigidbody>();
     }
 
@@ -72,7 +76,25 @@ public class InteractionWithPhysics : MonoBehaviour
         }
 
 
+        
+
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Floor"))
+        {
+            ResetObject();
+        }
+    }
+
+
+    void ResetObject()
+    {
+        transform.position = startingPosition;
+    }
+
+
 
     void FixedUpdate()
     {
