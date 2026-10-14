@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-
 public class CameraController : MonoBehaviour
 {
 
@@ -10,18 +8,18 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        if (Keyboard.current.aKey.wasPressedThisFrame)
+        if (Input.GetKeyDown(KeyCode.A))
         {
             CameraRotateLeft();
         }
 
-        if (Keyboard.current.dKey.wasPressedThisFrame)
+        if (Input.GetKeyDown(KeyCode.D))
         {
             CameraRotateRight();
         }
 
         //sets the targetRotation on the y axis to cameraPostion * 90 degrees 
-        Quaternion targetRotation = Quaternion.Euler(0, cameraPosition * 180, 0);
+        Quaternion targetRotation = Quaternion.Euler(0, cameraPosition * 90, 0);
 
         //gradually rotates the camera towards the target rotation
         transform.rotation = Quaternion.Slerp(transform.rotation,targetRotation, rotationSpeed * Time.deltaTime);

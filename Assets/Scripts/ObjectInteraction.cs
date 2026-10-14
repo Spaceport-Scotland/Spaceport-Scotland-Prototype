@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
+// using the old Input system (Input.mousePosition / GetMouseButton)
 
 public class ObjectInteraction : MonoBehaviour
 {
@@ -10,13 +10,10 @@ public class ObjectInteraction : MonoBehaviour
 
     void Update()
     {
-        //checks if the left mouse button was pressed
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        // check mouse down
+        if (Input.GetMouseButtonDown(0))
         {
-            //shoots a ray from the current mouse position
-            Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
-
-            // If the raycast hits object with script attached, start dragging and save the distance
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
                 if (hit.transform == transform)
@@ -26,20 +23,16 @@ public class ObjectInteraction : MonoBehaviour
                 }
             }
         }
-        
 
-        //if the left mouse button is pressed while dragging 
-        if (Mouse.current.leftButton.isPressed && dragging)
+        // while holding
+        if (Input.GetMouseButton(0) && dragging)
         {
-            //shoots a ray from the current mouse position
-            Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
-
-            //moves the object to that postition and keeps the distance
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             transform.position = ray.GetPoint(distance);
         }
 
-        //sets dragging to false when left mouse is released drops the object
-        if (Mouse.current.leftButton.wasReleasedThisFrame)
+        // mouse up
+        if (Input.GetMouseButtonUp(0))
         {
             dragging = false;
         }

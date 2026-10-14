@@ -1,10 +1,10 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
+// using the old Input system (Input.mousePosition / GetMouseButton)
 
 public class InteractionWithPhysics : MonoBehaviour
 {
     //checks if you are dragging an object
-    private bool dragging;
+    public bool dragging;
 
     //distance from the camera the object is when dragging
     private float distance;
@@ -29,10 +29,10 @@ public class InteractionWithPhysics : MonoBehaviour
     void Update()
     {
         //checks if the left mouse button was pressed
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        if (Input.GetMouseButtonDown(0))
         {
             //shoots a ray from the current mouse position
-            Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             //if the raycast hits object with script attached, start dragging
             if (Physics.Raycast(ray, out RaycastHit hit))
@@ -47,29 +47,29 @@ public class InteractionWithPhysics : MonoBehaviour
         }
 
         //if the left mouse button is pressed while dragging
-        if (Mouse.current.leftButton.isPressed && dragging)
+        if (Input.GetMouseButton(0) && dragging)
         {
             //shoots a ray from the current mouse position
-            Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             //sets the mouse position as the target
             targetPosition = ray.GetPoint(distance);
 
             //increases distance when scrolling up
-            if (Mouse.current.scroll.ReadValue().y > 0)
+            if (Input.mouseScrollDelta.y > 0)
             {
                 distance += 0.2f;
             }
 
             //reduces distance when scrolling down
-            if (Mouse.current.scroll.ReadValue().y < 0)
+            if (Input.mouseScrollDelta.y < 0)
             {
                 distance -= 0.2f;
             }
         }
 
         //sets dragging to false when left mouse is released
-        if (Mouse.current.leftButton.wasReleasedThisFrame)
+        if (Input.GetMouseButtonUp(0))
         {
             dragging = false;
             rb.useGravity = true;
@@ -91,7 +91,16 @@ public class InteractionWithPhysics : MonoBehaviour
 
     void ResetObject()
     {
+        // teleport back to start and clear any momentum
         transform.position = startingPosition;
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rb.Sleep();
+        }
+        dragging = false;
+        rb.useGravity = true;
     }
 
 

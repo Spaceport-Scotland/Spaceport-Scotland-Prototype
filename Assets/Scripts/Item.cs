@@ -15,5 +15,64 @@ public class Item : MonoBehaviour
     public bool isCold;
     public bool isWarm;
 
+    // Item info: name, description, then comma-separated attributes
+    public string GetTooltip()
+    {
+        // Item info: each piece appears on its own line.
+        // Use \n to separate lines.
+        string itemInfo = "";
+
+        // Name on first line (if present)
+        if (!string.IsNullOrEmpty(ItemName))
+        {
+            itemInfo += ItemName + "\n";
+        }
+
+        // Description on next line (if present)
+        if (!string.IsNullOrEmpty(ItemDescription))
+        {
+            itemInfo += ItemDescription + "\n";
+        }
+
+        // Attributes: one per line
+        if (isFurry)
+        {
+            itemInfo += "Furry" + "\n";
+        }
+
+        if (isHard)
+        {
+            itemInfo += "Hard" + "\n";
+        }
+
+        if (isSoft)
+        {
+            itemInfo += "Soft" + "\n";
+        }
+
+        if (isShiny)
+        {
+            itemInfo += "Shiny" + "\n";
+        }
+
+        if (isCold)
+        {
+            itemInfo += "Cold" + "\n";
+        }
+
+        if (isWarm)
+        {
+            itemInfo += "Warm" + "\n";
+        }
+
+        // Remove trailing newline if present
+        if (itemInfo.EndsWith("\n"))
+        {
+            itemInfo = itemInfo.Substring(0, itemInfo.Length - 1);
+        }
+
+        return itemInfo;
+    }
+
 
 }
