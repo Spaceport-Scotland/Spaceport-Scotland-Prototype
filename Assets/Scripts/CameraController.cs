@@ -21,7 +21,7 @@ public class CameraController : MonoBehaviour
         }
 
         //sets the targetRotation on the y axis to cameraPostion * 90 degrees 
-        Quaternion targetRotation = Quaternion.Euler(0, cameraPosition * 90, 0);
+        Quaternion targetRotation = Quaternion.Euler(0, cameraPosition * 180, 0);
 
         //gradually rotates the camera towards the target rotation
         transform.rotation = Quaternion.Slerp(transform.rotation,targetRotation, rotationSpeed * Time.deltaTime);
