@@ -3,8 +3,9 @@ public class CameraController : MonoBehaviour
 {
 
     private int cameraPosition;
-  
-    public float rotationSpeed = 5f;
+
+    // rotationSpeed is degrees per second for the camera to rotate
+    public float rotationSpeed = 180f;
 
     void Update()
     {
@@ -21,8 +22,8 @@ public class CameraController : MonoBehaviour
         //sets the targetRotation on the y axis to cameraPostion * 90 degrees 
         Quaternion targetRotation = Quaternion.Euler(0, cameraPosition * 90, 0);
 
-        //gradually rotates the camera towards the target rotation
-        transform.rotation = Quaternion.Slerp(transform.rotation,targetRotation, rotationSpeed * Time.deltaTime);
+        // gradually rotate toward the target at a fixed degrees/sec speed
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 
     //function for rotate left/right if we include buttons

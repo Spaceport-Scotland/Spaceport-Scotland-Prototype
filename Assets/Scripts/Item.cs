@@ -25,13 +25,13 @@ public class Item : MonoBehaviour
         // Name on first line (if present)
         if (!string.IsNullOrEmpty(ItemName))
         {
-            itemInfo += ItemName + "\n";
+            itemInfo += ItemName + "\n" + "\n";
         }
 
         // Description on next line (if present)
         if (!string.IsNullOrEmpty(ItemDescription))
         {
-            itemInfo += ItemDescription + "\n";
+            itemInfo += ItemDescription + "\n" + "\n";
         }
 
         // Attributes: one per line
