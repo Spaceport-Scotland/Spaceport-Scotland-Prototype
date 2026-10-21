@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - Item
+  - ItemInfoPanel
   layers:
   - Default
   - TransparentFX

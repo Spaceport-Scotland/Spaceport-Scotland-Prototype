@@ -11,6 +11,7 @@ public class ItemHoverInfo : MonoBehaviour
 
     void Start()
     {
+
         if (itemInfoPanel != null) itemInfoPanel.SetActive(false);
     }
 
