@@ -3,6 +3,8 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     [Header("Item Description")]
+    // Unique identifier for the item used for comparing in the ItemSelector script
+    public int ItemID;
     public string ItemName;
     public string ItemDescription;
 
