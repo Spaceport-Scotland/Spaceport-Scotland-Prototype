@@ -14,6 +14,11 @@ public class Item : MonoBehaviour
     public bool isShiny;
     public bool isCold;
     public bool isWarm;
+    public bool isRound;
+    public bool isCubic;
+    public bool isPointy;
+    public bool isCute;
+
 
     // Item info: name, description, then comma-separated attributes
     public string GetTooltip()
@@ -64,6 +69,26 @@ public class Item : MonoBehaviour
         {
             itemInfo += "Warm" + "\n";
         }
+
+        if (isPointy)
+        {
+            itemInfo += "Pointy" + "\n";
+        }
+
+        if (isCute)
+        {
+            itemInfo += "Cute" + "\n";
+        }
+
+        if (isRound)
+        {
+            itemInfo += "Round" + "\n";
+        }
+        if (isCubic)
+        {
+            itemInfo += "Cubic" + "\n";
+        }
+
 
         // Remove trailing newline if present
         if (itemInfo.EndsWith("\n"))
