@@ -22,6 +22,7 @@ public class CustomerSpawner : MonoBehaviour
         GameObject obj = Instantiate(customerPrefabs[index], spawnPoint.position, Quaternion.identity);
 
         currentCustomer = obj.GetComponent<Customer>();
+        Debug.Log("Spawn Customer Prefab");
 
         //need a move to animation from spawn point to serve point
 
@@ -31,6 +32,7 @@ public class CustomerSpawner : MonoBehaviour
     public void DespawnCustomer()
     {
         Debug.Log("Customer Despawns");
+        //gameObject destroy
 
         currentCustomer = null;
         //need to add to this
