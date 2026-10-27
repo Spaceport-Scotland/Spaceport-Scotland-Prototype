@@ -19,6 +19,7 @@ public class Item : MonoBehaviour
     public bool isCubic;
     public bool isPointy;
     public bool isCute;
+    public bool isLiquid;
 
 
     // Item info: name, description, then comma-separated attributes
@@ -89,7 +90,10 @@ public class Item : MonoBehaviour
         {
             itemInfo += "Cubic" + "\n";
         }
-
+        if (isLiquid)
+        {
+            itemInfo += "Liquid" + "\n";
+        }
 
         // Remove trailing newline if present
         if (itemInfo.EndsWith("\n"))
