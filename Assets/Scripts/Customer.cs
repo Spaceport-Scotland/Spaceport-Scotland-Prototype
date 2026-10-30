@@ -15,11 +15,17 @@ public class Customer : MonoBehaviour //KA
 
 
     //edit it in unity
-    [Header("CustomerDialogue")]
+    [Header("CustomerEnglishDialogue")]
     public Text requestText;
     public string greetingReaction = " ";
     public string correctReaction = " ";
     public string wrongReaction = " ";
+
+    [Header("CustomerAlienDialogue")]
+    public Text requestAlienText;
+    public string greetingAlienReaction = " ";
+    public string correctAlienReaction = " ";
+    public string wrongAlienReaction = " ";
 
 
 
@@ -27,6 +33,7 @@ public class Customer : MonoBehaviour //KA
     {
         itemRequested = possibleRequests[Random.Range(0, possibleRequests.Length)]; //randomises customer request from list of items
         requestText.text = greetingReaction + itemRequested;
+        requestAlienText.text = greetingReaction + itemRequested;
 
     }//end of start
 

@@ -7,17 +7,22 @@ public class ItemSelector : MonoBehaviour
 
     public Item selectedItem;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        // Find the Item script on the object that entered the tray
-        Item item = other.GetComponentInParent<Item>();
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    // Find the Item script on the object that entered the tray
+    //    Item item = other.GetComponentInParent<Item>();
 
-        if (item != null)
-        {
-            selectedItem = item;
-            selectedItemID = item.ItemID;
-        }
-    }
+    //    if (item != null && currentCustomer != null)
+    //    {
+    //        currentCustomer.ReactToItem(item); // link to character script
+
+    //        Destory(other.gameObject);// should destory item
+    //        currentCustomer = null;// states there is no longer a customer being served
+
+    //       // selectedItem = item;
+    //       // selectedItemID = item.ItemID;
+    //    }
+    //}
 
     private void OnTriggerExit(Collider other)
     {
