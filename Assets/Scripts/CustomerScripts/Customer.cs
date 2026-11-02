@@ -52,8 +52,7 @@ public class Customer : MonoBehaviour
             return;
         }
 
-        itemRequested =
-            possibleRequests[Random.Range(0, possibleRequests.Length)];
+        itemRequested = possibleRequests[Random.Range(0, possibleRequests.Length)];
 
         if (uiManager != null)
         {

@@ -158,6 +158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snowglobe
       objectReference: {fileID: 0}
+    - target: {fileID: 4987253485410519276, guid: 143459233ad0bd54aaa90f9e12bcc96f, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     - target: {fileID: 5655844054140277334, guid: 143459233ad0bd54aaa90f9e12bcc96f, type: 3}
       propertyPath: m_LocalScale.y
       value: 32.836376
