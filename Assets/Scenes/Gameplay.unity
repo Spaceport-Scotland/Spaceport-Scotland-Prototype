@@ -4558,8 +4558,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemSelector
   selectedItemID: -1
   selectedItem: {fileID: 0}
-  currentCustomer: {fileID: 0}
-  customerSpawner: {fileID: 0}
+  currentCustomer: {fileID: 6691574702733049874, guid: 24d30e4ba632b404d8229ef77fbfdbf7, type: 3}
+  customerSpawner: {fileID: 2128785342}
 --- !u!65 &1587914850
 BoxCollider:
   m_ObjectHideFlags: 0
