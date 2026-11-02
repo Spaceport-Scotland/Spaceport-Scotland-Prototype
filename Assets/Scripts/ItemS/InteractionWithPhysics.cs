@@ -89,7 +89,7 @@ public class InteractionWithPhysics : MonoBehaviour
     }
 
 
-    public void ResetObject()
+    void ResetObject()
     {
         // teleport back to start and clear any momentum
         transform.position = startingPosition;

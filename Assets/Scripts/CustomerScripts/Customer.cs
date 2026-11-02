@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections.Generic;
 
 public class Customer : MonoBehaviour
 {
@@ -32,17 +31,12 @@ public class Customer : MonoBehaviour
     [HideInInspector]
     public CustomerSpawner spawner;
 
-    public ItemSelector itemSelector;
-
-
     [HideInInspector]
     public UIManager uiManager;
 
     private void Start()
     {
-        itemSelector = GameObject.FindGameObjectWithTag("ItemSelector").GetComponent<ItemSelector>();
         GenerateRequest();
-
     }
 
     private void Update()
@@ -115,12 +109,8 @@ public class Customer : MonoBehaviour
         {
             uiManager.UpdateRequest(correctReaction);//changes text if correct
             Debug.Log(correctReaction);
-            //sets correct item to true used for reseting item in the tray.
-            itemSelector.correctItem = true;
+
             currentState = CustomerState.Served;
-           
-            
-            
 
             if (spawner != null)
             {
@@ -133,6 +123,4 @@ public class Customer : MonoBehaviour
             Debug.Log(wrongReaction);
         }
     }
-
-
 }

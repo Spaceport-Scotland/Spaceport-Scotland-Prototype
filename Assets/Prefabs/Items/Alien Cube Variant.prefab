@@ -30,15 +30,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.10482
       objectReference: {fileID: 0}
     - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 8.7
       objectReference: {fileID: 0}
     - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
       propertyPath: m_LocalRotation.w
@@ -87,10 +87,6 @@ PrefabInstance:
     - target: {fileID: 9196286250158026910, guid: e022a7a430885654da7c579c94f87667, type: 3}
       propertyPath: m_Name
       value: Alien Cube Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 9196286250158026910, guid: e022a7a430885654da7c579c94f87667, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9196286250158026910, guid: e022a7a430885654da7c579c94f87667, type: 3}
       propertyPath: m_TagString
