@@ -9,7 +9,7 @@ public class Item : MonoBehaviour
 
 
     [Header("Item Attributes")]
-    public bool isFurry;
+    public bool isTasty;
     public bool isHard;
     public bool isSoft;
     public bool isShiny;
@@ -19,7 +19,7 @@ public class Item : MonoBehaviour
     public bool isCubic;
     public bool isPointy;
     public bool isCute;
-    public bool isLiquid;
+    public bool isWet;
 
 
     // Item info: name, description, then comma-separated attributes
@@ -42,9 +42,9 @@ public class Item : MonoBehaviour
         }
 
         // Attributes: one per line
-        if (isFurry)
+        if (isTasty)
         {
-            itemInfo += "Furry" + "\n";
+            itemInfo += "Tasty" + "\n";
         }
 
         if (isHard)
@@ -90,9 +90,9 @@ public class Item : MonoBehaviour
         {
             itemInfo += "Cubic" + "\n";
         }
-        if (isLiquid)
+        if (isWet)
         {
-            itemInfo += "Liquid" + "\n";
+            itemInfo += "Wet" + "\n";
         }
 
         // Remove trailing newline if present

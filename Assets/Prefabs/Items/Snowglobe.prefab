@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5329765307046442429
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 37.302
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 32.83638
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 46.150368
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5100002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.38
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5245485
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5245484
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.4741824
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.47418246
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -84.226
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      propertyPath: m_Name
+      value: Snowglobe Model - Joey M
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8776624589690668439}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3566584235909072144}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6170346618527816336}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 846574607232242108}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7909133782176158455}
+  m_SourcePrefab: {fileID: 100100000, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+--- !u!1 &4987253485410519276 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7c9cf575af7998142859be4182dd073d, type: 3}
+  m_PrefabInstance: {fileID: 5329765307046442429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8776624589690668439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4987253485410519276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d89fd163f4e5d4db57e0d3f3adab94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  ItemID: 1
+  ItemName: SnowGlobe
+  ItemDescription: Christmas stuff
+  isTasty: 0
+  isHard: 1
+  isSoft: 0
+  isShiny: 1
+  isCold: 1
+  isWarm: 0
+  isRound: 0
+  isCubic: 0
+  isPointy: 0
+  isCute: 0
+  isWet: 0
+--- !u!114 &3566584235909072144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4987253485410519276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e35fbbe7d0fe3774aba9e2e6d85bbf72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemHoverInfo
+  itemInfoPanel: {fileID: 0}
+  itemInfoText: {fileID: 0}
+  offset: {x: 10, y: -10}
+--- !u!114 &6170346618527816336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4987253485410519276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e203e02130976a459273a09796289c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractionWithPhysics
+  dragging: 0
+  moveSpeed: 5
+--- !u!54 &846574607232242108
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4987253485410519276}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!64 &7909133782176158455
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4987253485410519276}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3389646231621714367, guid: 7c9cf575af7998142859be4182dd073d, type: 3}

@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6540467632257739593
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 110617512698175596, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: de4d9b4a0a41a0a45b5ff12a6c7de96e, type: 2}
+    - target: {fileID: 1512719642492611627, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6217
+      objectReference: {fileID: 0}
+    - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6217
+      objectReference: {fileID: 0}
+    - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6217
+      objectReference: {fileID: 0}
+    - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.10482
+      objectReference: {fileID: 0}
+    - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2565279509688974881, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291180282935371812, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736091908942872228, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736091908942872228, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550229452367333608, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9196286250158026910, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_Name
+      value: Alien Cube Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 9196286250158026910, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8550229452367333608, guid: e022a7a430885654da7c579c94f87667, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9196286250158026910, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 30711999062649419}
+    - targetCorrespondingSourceObject: {fileID: 9196286250158026910, guid: e022a7a430885654da7c579c94f87667, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7464021942838938806}
+  m_SourcePrefab: {fileID: 100100000, guid: e022a7a430885654da7c579c94f87667, type: 3}
+--- !u!1 &2691935650878577623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9196286250158026910, guid: e022a7a430885654da7c579c94f87667, type: 3}
+  m_PrefabInstance: {fileID: 6540467632257739593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &30711999062649419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2691935650878577623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d89fd163f4e5d4db57e0d3f3adab94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  ItemID: 2
+  ItemName: Alien Cube
+  ItemDescription: A strange substance in a cube
+  isTasty: 0
+  isHard: 0
+  isSoft: 0
+  isShiny: 1
+  isCold: 0
+  isWarm: 0
+  isRound: 0
+  isCubic: 1
+  isPointy: 0
+  isCute: 0
+  isWet: 0
+--- !u!114 &7464021942838938806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2691935650878577623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e35fbbe7d0fe3774aba9e2e6d85bbf72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemHoverInfo
+  itemInfoPanel: {fileID: 0}
+  itemInfoText: {fileID: 0}
+  offset: {x: 10, y: -10}
