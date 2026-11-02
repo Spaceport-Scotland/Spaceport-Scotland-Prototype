@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2789837188403098029}
   - component: {fileID: 7621114368406994935}
   - component: {fileID: 6691574702733049874}
+  - component: {fileID: 1501826291941467994}
   m_Layer: 0
   m_Name: Customer - Type 1
   m_TagString: Customer
@@ -139,3 +140,19 @@ MonoBehaviour:
   wrongReaction: This isnt what I asked for
   spawner: {fileID: 0}
   uiManager: {fileID: 0}
+--- !u!114 &1501826291941467994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798635922842441915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f18aec7f9fcc540977a3dc3ae9dfb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCRequest
+  tours:
+  - PlaceHolder1
+  - Placeholder2
+  - Placeholder3

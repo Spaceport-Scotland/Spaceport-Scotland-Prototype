@@ -27,6 +27,7 @@ public class NPCRequest : MonoBehaviour
 
     public bool CheckAnswer(string chosen)
     {
+        Debug.Log("Chosen: [" + chosen + "] Wanted: [" + WantedTour + "]");
         bool correct = chosen == WantedTour;
         Debug.Log(correct ? "Correct!" : "Wrong Answer");
         return correct;
