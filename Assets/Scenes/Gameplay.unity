@@ -2484,7 +2484,7 @@ GameObject:
   - component: {fileID: 594145546}
   - component: {fileID: 594145550}
   m_Layer: 0
-  m_Name: ItemSelectorTray
+  m_Name: OLDItemSelectorTray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2521,6 +2521,7 @@ MonoBehaviour:
   selectedItem: {fileID: 0}
   currentCustomer: {fileID: 0}
   customerSpawner: {fileID: 0}
+  incorrectItemDelay: 1
 --- !u!65 &594145547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3842,7 +3843,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &859598820
 Transform:
   m_ObjectHideFlags: 0
@@ -5976,6 +5977,7 @@ MonoBehaviour:
   selectedItem: {fileID: 0}
   currentCustomer: {fileID: 6691574702733049874, guid: 24d30e4ba632b404d8229ef77fbfdbf7, type: 3}
   customerSpawner: {fileID: 2128785342}
+  incorrectItemDelay: 1
 --- !u!65 &1587914850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6379,6 +6381,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d03d054c71654f34c89e41802e61285b, type: 2}
+    - target: {fileID: -5550528632726736493, guid: 1fcc05d297331e84e90251b7ca1853ce, type: 3}
+      propertyPath: m_Name
+      value: ItemSelectorTray
+      objectReference: {fileID: 0}
     - target: {fileID: -4785560329277550322, guid: 1fcc05d297331e84e90251b7ca1853ce, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 

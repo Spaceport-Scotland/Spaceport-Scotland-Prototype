@@ -135,7 +135,9 @@ MonoBehaviour:
   - {fileID: 30711999062649419, guid: 11eb4f90fcdedc34288b81bd7ef3d00f, type: 3}
   - {fileID: 8745376113794272085, guid: ecfcc01c79fdab0498bdf55b970f1140, type: 3}
   itemRequested: {fileID: 0}
-  greetingReaction: 'Hello I would like a '
+  negativeReaction: 'NO! '
+  greeting: 'Hello! '
+  requestReaction: 'I would like a '
   correctReaction: Thanks
   wrongReaction: This isnt what I asked for
   spawner: {fileID: 0}
