@@ -9,11 +9,15 @@ public class InteractionWithPhysics : MonoBehaviour
     //distance from the camera the object is when dragging
     private float distance;
 
+    //distance from the camera to the inspection marker
+    public float inspectionDistance;
+
     //target position for the object
     private Vector3 targetPosition;
 
     //speed the object moves towards the target
-    public float moveSpeed = 5f;
+    public float moveSpeed = 3f;
+    public float rotationSpeed = 100f;
 
     private Vector3 startingPosition;
 
@@ -21,9 +25,23 @@ public class InteractionWithPhysics : MonoBehaviour
 
     void Start()
     {
+        //store the starting position of the object
         startingPosition = transform.position;
 
         rb = GetComponent<Rigidbody>();
+
+        //find the inspection marker in the scene
+        GameObject inspectionMarker = GameObject.FindGameObjectWithTag("InspectionDistance");
+
+        //calculate the distance from the camera to the inspection marker
+        if (inspectionMarker != null)
+        {
+            inspectionDistance = Vector3.Distance(Camera.main.transform.position, inspectionMarker.transform.position);
+        }
+        else
+        {
+            Debug.LogError("InspectionDistance marker was not found.");
+        }
     }
 
     void Update()
@@ -49,23 +67,44 @@ public class InteractionWithPhysics : MonoBehaviour
         //if the left mouse button is pressed while dragging
         if (Input.GetMouseButton(0) && dragging)
         {
+            if (Input.GetKey(KeyCode.Q))
+            {
+                transform.Rotate(Vector3.up, -rotationSpeed * Time.deltaTime, Space.World);
+            }
+
+            if (Input.GetKey(KeyCode.E))
+            {
+                transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime, Space.World);
+            }
+
             //shoots a ray from the current mouse position
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            //sets the mouse position as the target
-            targetPosition = ray.GetPoint(distance);
 
             //increases distance when scrolling up
             if (Input.mouseScrollDelta.y > 0)
             {
-                distance += 0.2f;
+                distance += 1f;
             }
 
             //reduces distance when scrolling down
             if (Input.mouseScrollDelta.y < 0)
             {
-                distance -= 0.2f;
+                distance -= 1f;
             }
+
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                distance = inspectionDistance;
+            }
+
+            // Prevent the distance from going below the inspection distance or into the camera
+            if (distance < inspectionDistance)
+            {
+                distance = inspectionDistance;
+            }
+
+            //sets the mouse position as the target
+            targetPosition = ray.GetPoint(distance);
         }
 
         //sets dragging to false when left mouse is released

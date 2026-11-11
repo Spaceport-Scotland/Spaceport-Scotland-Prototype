@@ -8,6 +8,11 @@ TagManager:
   - Item
   - ItemInfoPanel
   - Customer
+  - Tray
+  - Shelf
+  - InspectionDistance
+  - TrayDistance
+  - ShelfDistance
   layers:
   - Default
   - TransparentFX
