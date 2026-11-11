@@ -7,6 +7,7 @@ public class ItemHoverInfo : MonoBehaviour
 {
     public GameObject itemInfoPanel;
     public TextMeshProUGUI itemInfoText;
+    // offset for the item info panel so it doesn't cover the mouse cursor or item
     public Vector2 offset = new Vector2(10f, -10f);
 
     void Start()
