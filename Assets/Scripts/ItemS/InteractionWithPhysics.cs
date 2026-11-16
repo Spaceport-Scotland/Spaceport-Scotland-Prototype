@@ -147,6 +147,7 @@ public class InteractionWithPhysics : MonoBehaviour
     void FixedUpdate()
     {
         //if dragging, move towards the target
+        //used in the item reaction controller to determine if the item is being dragged
         if (dragging)
         {
             Vector3 direction = targetPosition - rb.position;
