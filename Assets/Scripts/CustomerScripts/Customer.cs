@@ -23,10 +23,10 @@ public class Customer : MonoBehaviour
 
     public Item itemRequested;
 
-    [Header("Dialogue")]
+    [Header("Dialogue")]//will be changed soon to dialogue manager
     public string negativeReaction = "NO! ";
     public string greeting = "Hello! ";
-    public string request = "I would like a ";
+    public string request = "I would like something that's ";
     public string correctReaction = "Thank you!";
     public string wrongReaction = "That isn't what I requested.";
 
@@ -58,7 +58,7 @@ public class Customer : MonoBehaviour
 
         if (uiManager != null)
         {
-            uiManager.UpdateRequest(greeting + request + itemRequested.ItemName);
+            uiManager.UpdateRequest(greeting + request + itemRequested.ItemDescription);
         }
 
 
@@ -75,7 +75,7 @@ public class Customer : MonoBehaviour
 
         if (uiManager != null)
         {
-            uiManager.UpdateRequest(request + itemRequested.ItemName);
+            uiManager.UpdateRequest(request + itemRequested.ItemDescription);
         }
 
         Debug.Log("Requested again: " + itemRequested.ItemName);

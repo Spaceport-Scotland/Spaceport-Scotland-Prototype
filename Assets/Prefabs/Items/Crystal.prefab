@@ -126,8 +126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   ItemID: 3
   ItemName: Crystal
-  ItemDescription: A shiny Crystal from a distant planet, believed to give the holder
-    good luck
+  ItemDescription: Found in shiny mines
+  ItemAttributes: 
   isTasty: 0
   isHard: 0
   isSoft: 0
@@ -167,7 +167,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractionWithPhysics
   dragging: 0
+  inspectionDistance: 0
   moveSpeed: 5
+  rotationSpeed: 100
 --- !u!23 &4946126413600502638
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -123,7 +123,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   ItemID: 2
   ItemName: Alien Cube
-  ItemDescription: A strange substance in a cube
+  ItemDescription: Strange substance
+  ItemAttributes: 
   isTasty: 0
   isHard: 0
   isSoft: 0

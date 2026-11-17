@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour //WIP
     public void UpdateRequest(string request)
     {
         ShowDialogue(request);
-    }
+    }//end of update
 
     public void ShowDialogue(string sentence)//check if typing is in effect, start + stops timer of sequence
     {

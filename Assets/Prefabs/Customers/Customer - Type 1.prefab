@@ -79,7 +79,7 @@ MonoBehaviour:
   itemRequested: {fileID: 0}
   negativeReaction: 'NO! '
   greeting: 'Hello! '
-  request: 'I would like a '
+  request: 'I would like something that''s  '
   correctReaction: Thanks
   wrongReaction: This isnt what I asked for
   spawner: {fileID: 0}
