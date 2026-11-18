@@ -6,6 +6,7 @@ public class Item : MonoBehaviour
     public int ItemID;
     public string ItemName;
     public string ItemDescription;
+    public string ItemAttributes;
 
 
     [Header("Item Attributes")]

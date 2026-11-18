@@ -23,8 +23,10 @@ public class Customer : MonoBehaviour
 
     public Item itemRequested;
 
-    [Header("Dialogue")]
-    public string greetingReaction = "I would like a ";
+    [Header("Dialogue")]//will be changed soon to dialogue manager
+    public string negativeReaction = "NO! ";
+    public string greeting = "Hello! ";
+    public string request = "I would like something that's ";
     public string correctReaction = "Thank you!";
     public string wrongReaction = "That isn't what I requested.";
 
@@ -52,15 +54,31 @@ public class Customer : MonoBehaviour
             return;
         }
 
-        itemRequested =
-            possibleRequests[Random.Range(0, possibleRequests.Length)];
+        itemRequested = possibleRequests[Random.Range(0, possibleRequests.Length)];
 
         if (uiManager != null)
         {
-            uiManager.UpdateRequest(greetingReaction + itemRequested.ItemName);
+            uiManager.UpdateRequest(greeting + request + itemRequested.ItemDescription);
         }
 
+
         Debug.Log("Requested: " + itemRequested.ItemName);
+    }
+
+    public void RepeatRequest()
+    {
+        if (itemRequested == null)
+        {
+            Debug.LogError("Requested Item is NULL");
+            return;
+        }
+
+        if (uiManager != null)
+        {
+            uiManager.UpdateRequest(request + itemRequested.ItemDescription);
+        }
+
+        Debug.Log("Requested again: " + itemRequested.ItemName);
     }
 
     public void MoveTo(Transform destination)
@@ -98,30 +116,24 @@ public class Customer : MonoBehaviour
         }
     }
 
-    public void ReactToItem(int itemID)
+    public void ReactToCorrectItem()
     {
-        if (itemRequested == null)
+        if (uiManager != null)
         {
-            Debug.LogError("Requested Item is NULL");
-            return;
+            uiManager.UpdateRequest(correctReaction);
         }
 
-        if (itemID == itemRequested.ItemID)
-        {
-            uiManager.UpdateRequest(correctReaction);//changes text if correct
-            Debug.Log(correctReaction);
+        Debug.Log(correctReaction);
+        currentState = CustomerState.Served;
+    }
 
-            currentState = CustomerState.Served;
-
-            if (spawner != null)
-            {
-                spawner.CustomerDespawn();
-            }
-        }
-        else
+    public void ReactToIncorrectItem()
+    {
+        if (uiManager != null)
         {
-            uiManager.UpdateRequest(wrongReaction);//changes text if wrong
-            Debug.Log(wrongReaction);
+            uiManager.UpdateRequest(negativeReaction + wrongReaction);
         }
+
+        Debug.Log(negativeReaction + wrongReaction);
     }
 }
